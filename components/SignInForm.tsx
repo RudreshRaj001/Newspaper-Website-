@@ -44,7 +44,7 @@ const SignInForm = () => {
                 password: values.password,
                 redirect: false
             });
-            console.log(signInData);
+            
             if (signInData?.error) {
                 toast({
                     title: "Error",

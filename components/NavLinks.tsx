@@ -10,6 +10,14 @@ const NavLinks = () => {
             href: '/'
         },
         {
+            name: 'All Blog',
+            href: '/allblogs'
+        },
+        {
+            name: 'Create Blog',
+            href: '/createblog'
+        },
+        {
             name: 'About',
             href: '/about'
         },
@@ -29,7 +37,6 @@ const NavLinks = () => {
                     className={`text-lg  ${pathname === link.href ? 'font-semibold underline' : ''}`}
                 >{link.name}</Link>
             ))}
-
         </div>
     )
 }

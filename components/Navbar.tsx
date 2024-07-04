@@ -10,7 +10,7 @@ const Navbar = async () => {
 
     const name = await getName()
     return (
-        <div className={`flex justify-between w-full p-5 items-center border-b-2 shadow-md
+        <div className={`flex justify-between w-full px-5 py-2 items-center border-b-2 shadow-md
         bg-secondary/50
         `}>
             <p className='font-bold'>News Website</p>
@@ -18,6 +18,7 @@ const Navbar = async () => {
             >
                 <NavLinks />
                 <LoginButton />
+                
             </div>
         </div>
     )

@@ -50,7 +50,6 @@ const ProfileForm = () => {
             const data = await res.json();
             if (res.ok) {
                 setUserData(data);
-                console.log(data);
                 form.reset({
                     name: data.name,
                 });
@@ -81,7 +80,7 @@ const ProfileForm = () => {
     }, []);
 
     const onSubmit = async (values: z.infer<typeof FormSchema>) => {
-        console.log("request sending");
+
         const response = await fetch('api/user/', {
             method: 'PUT',
             body: JSON.stringify(values),
